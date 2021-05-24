@@ -1,0 +1,75 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title class="title">Document</title>
+</head>
+
+<!-- DOM(Document Object Model) Elemanlarina Erisim -->
+<!-- Herhangi bir dilden(JS,C# vb) HTML'de ki DOM API'ya ulasarak elemanlar kullanilabilir -->
+<!-- HTML elemanlarina ekleme silme guncelleme stillendirme okuma yapilabilir -->
+<!-- DOM'un parent'i document'dir o yuzden document ile baslanir -->
+
+<!-- HTML sayfasnda ki elemanlari secmek icin DOM API'da bir cok hazir method vardir -->
+<!-- 1- document.getElementById(id) >> Bir elemani id'ye gore bul. Tek eleman dondurur.-->
+<!-- 2- document.getElementsByTagName(isim) >> Bir elemani Tag(Etiket) adina gore bul.
+        Etiket icinde ki tum elemanlari dondurur. Bir dizi dondurmus olur -->
+<!-- 3- document.getElementsByClassName(isim) >> Bir elemani Class adina gore bul. Class icine ki tum elemanlari yani dizi dondurur -->
+
+<!-- 4- document.querySelector(CSS secici) >> Bir elemani id,class, ozellik, tur ve degere gore secmek icin kullanilir. 
+        Eslesen ilk elemani secer (". ") seklinde kullanilirsa class, ("# ") seklinde kullanilirsa id dondurur-->
+<!-- 5- document.querySelectorAll(CSS secici) >> Bir elemani id,class, ozellik, tur ve degere gore secmek icin kullanilir. 
+        Eslesen elemanlarin listesini doner -->
+
+<!-- HTML ELEMANLARIN OZELLIK VE STILLERINI DEGISTIRME -->
+<!-- element.innerHTML >>  Bir HTML elemaninin icerigini -->
+<!-- Document.create. -->
+<!-- element.appendChild -->
+<!-- element. -->
+
+<!-- HTML' DE OLMAYAN BIR ELEMAN EKLEME -->
+<!-- document.createElement(isim) >> Yeni bir eleman olusturu -->
+<!-- document.createTextNode(text) >> Bir eleman icin text dugum olusturur -->
+<!-- elemenr=t.appendChild(text dugum) >> Bir text dugumune eleman baglar-->
+<!-- element.removeChild(child dugum) >> Bir elemanin cocuk dugumunu siler -->
+
+<!------------------EVENTS---------------- -->
+<!-- (EVENTS) • DOM sayesinde l@YğŞçript, HTML olayları ile etkileşimi halinde olabilir. • Örneğin, kullanıcı bir HTML elemanına tıkladığında (bir olay meydana geldiğinde) bir Javascript kodu çalıştırılabilir. • Bir olay meydana geldiğinde bir JS kodu çalıştırmak için ilgili elemanın olay özelliği kullanılır. -->
+
+<!-- HTML OLAYLARI ICIN BIR COK ORNEK VERILEBILIR  
+• Kullanıcı Fareyi tıkladığında (onclick) 
+• Bir web sayfası yüklendiğinde (onload) 
+• Fare bir elemanın üzerine geldiğinde (onmousout) 
+Fare bir elemanın üzerinden ayrıldığında (onmouşçogt) 
+• Bir elemanın içeriği değiştiğinde (onchange) 
+• Bir HTML formu gönderildiğinde (onsubmit) 
+• Klavyeden bir tuşa basıldığında (onkeyup) */ -->
+
+<!-- HTML olaylarini uygulamanin bir kac yontemi vardir 
+1.YONTEM (INLINE) >> HTML içerisinde olayları tanımlayarak ve kullanarak
+2.YÖNTEM >> HTML içerisinde olay ve fonksiyonları çağırarak ve Javascript içerisinde bunları tanımlayarak
+3.YÖNTEM >> HTML sayfasında herhangi bir ekleme yapmaksızın
+sadece Javascript ile Olayları kontrol ederek.
+4.YÖNTEM >>  addEventListener() metodu ile Javascript kodunda Olay tanımlayarak.
+
+Piyasada en cok 3. ve 4. yontemler tercih edilir-->
+
+<!-- Eventlar paralel islem gibi calisirlar sirali calismazlar -->
+
+<body id="body">
+    <section>
+        <h1 class="h1">DOM Selector</h1>
+        <img src="img/js_logo.png" alt="" />
+        <img src="img/js_logo.png" alt="" />
+        <p id="par">
+            Javascript ogrenmek kolay...
+            <a href="www.javascript.org">Javascript</a>
+        </p>
+        <button id="btn">Tıkla</button>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
