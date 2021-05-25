@@ -28,10 +28,36 @@ sadece ilgili bir dosyayi kapsayacaksa mesela sadece app'i kapsayacaksa app.css 
                 <button class="btn on btn-outline-warning">AC</button>
                 <button class="btn off btn-outline-primary">KAPAT</button>
             </div>
+
+            <div class="input-div">
+                <label for="textbox">Bir seyler yaziniz</label>
+                <input class="textbox" type="text" value="" />
+                <!-- value >> inputun icine yazilan degere denir -->
+                <label for="checkbox">Kucuk/Buyuk</label>
+                <input class="checkbox" type="checkbox" />
+            </div>
+
+            <ul class="liste text-start">
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>Phyton</li>
+                <li>C++</li>
+                <li>SQL</li>
+            </ul>
+
+            <div class="text-start d-flex align-items-center mt-5">
+                <input class="dil me-1" type="text" />
+                <button class="btn ekle btn-success me-1">Ekle</button>
+                <button class="btn sil btn-danger">Sil</button>
+            </div>
+            <!-- butonlar ile input ayni hizada olmuyordu duzeltmek icin dikey hizalama yaptik >> d-flex uyguladik ve align-items-center 
+            yatay hizalama yapmak istersek justify-content kullanmaliydik -->
         </div>
     </main>
 
     <script src="app.js"></script>
 </body>
+<!-- bootstrap'de class uzerinden stillendirme yapmak css'e gerek kalmadan yapilabilir. (class="mt-3")-->
+<!--div kullanarak genel stillendirme yapmak basitlestirir -->
 
 </html>
