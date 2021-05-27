@@ -35,14 +35,14 @@ document.querySelector(".textbox").onkeyup = function() {
 
 // * YENI BIR HTML ELEMENTI OLUSTURALIM
 // olusturulan etiketin yerini insert before after ile ayarlayabiliriz h1 elementini input-div in sonrasina ekleyelim
+// olusturdugumz etikete className vererek style.css icinde stillendirme yapabiliriz
 const sonDiv = document.querySelector(".input-div");
 const h1 = document.createElement("h1");
 const yazi = document.createTextNode("Programlama Dilleri");
 h1.appendChild(yazi);
 sonDiv.after(h1); // h1 i input-div in sonrasina ekledik
-h1.style.marginTop = " 20px";
-h1.style.color = "red";
-h1.style.textAlign = "left";
+h1.className = "yeni=h1";
+//Stillendirmeyi css'de yapacagiz. bu yüzden className atadik
 
 // * CREATETEXTNODE()
 // * input-dil icine yazdigimiz dili ekleye tiklandiginda listeye ekleyelim

@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DIZILER</title>
+</head>
+
+<!-- Diziler bir veri yapisi(data structure) olup bir veya cok daha fazla veriyi saklamak icin kullanilir
+
+Verilerimizi cogunlukla array dedigimiz dizilere ve nesne dedigimiz objelere saklariz
+
+JSON > JavaScript Object Notation (Nesne paylasim yontemi)
+
+JS'de dizi tanimlamanin 2 yolu vardir
+1.YONTEM >> Koseli parantez ile >> Daha yaygin kullanilir, daha hizlidir.
+2.YONTEM >> new Anahtar kelimesi ile-->
+
+<!-- DIZI METHODLARI
+     JS'de diziler, Array.prototype
+     1. Diziyi degistiren (mutator) metotlar
+     2- Dizi erisim metotlari
+     3- Dizi iterasyon metotlari 
+-->
+
+<!-- 1- MUTATOR METOTLAR
+     .pop() > son elemani diziden siler ve bunu dondurur,
+     .push() >sonuna bir veya daha fazla eleman ekler ve eleman sayisini dondurur,
+     .reverse()> elemanlari ters siralar
+     .shift() > ilk elemani diziden siler ve bunu dondurur
+     .unshift() > ilk indekse bir eleman ekler ve eleman sayisini dondurur,
+     .sort() > artan sirada siralar
+     .splice() > dizinin icerigini degistirir.(olan elemani silip uzerine yazma, araya eleman ekleme)
+-->
+
+<!-- 2- DIZI ERISIM YONTEMLERI 
+    .concat() > birlestirme
+    .includes() > dizi bir seyi iceriyor mu true/false
+    .join() > tum elemanlari birlestirip string olarak dondurur. Birlestirme sarti belirtileblr
+    .slice() > belirtilen baslangic ve bitis indeksine gore kopya olusturup dondurur. diziden baska bir alt dizi olusturms olur
+    .toString() > elemanlari tek String olarak dondurur. sartsiz standart birlestirme yapar
+    .indexOf() > belirtilen elemanin ilk goruldugu indexi dondurur.Bulamazsa -1 dondurur
+    .lastIndexOf () >  Belirtilen elemanin dizide en son indeksini dondurur. Bulamazsa -1 dondurur
+-->
+
+<body>
+    <h1 id="meyveler"></h1>
+    <script src="diziler.js"></script>
+</body>
+
+</html>
