@@ -1,3 +1,30 @@
-* {
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    /* vw >> viewport-width(tarayicinin alani)demektir. tarayici alaninin %100 dmektir
+       vh >> viewport-height*/
     text-align: center;
+    flex-direction: column;
+    /* satir satir dizsin demis olduk alt alta gelmesi icin  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-item center >> yatay
+       justify-content >> dikey hizalama icin kullaniulir
+       her ikisi icin de display-flex kullanilmasi gerekir */
+}
+
+.btn {
+    padding: 1rem;
+    background-color: bisque;
+    border-radius: 15px;
+}
+
+.btn:hover {
+    background-color: rgb(159, 122, 76);
+    /* btn uzerine gelince renk degistirsin  */
+}
+
+h1 {
+    background-color: white;
 }
