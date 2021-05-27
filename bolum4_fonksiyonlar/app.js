@@ -128,5 +128,3 @@ const h = prompt("Yuksekligi giriniz : ");
 const hacimHesapla = (r, h) => Math.PI * r * r * h;
 console.log("Silindirin hacmi : " + Math.round(hacimHesapla(r, h))); // sonucu yuvarlamak istiyorsak >>  Math.round
 console.log("Silindirin hacmi : " + hacimHesapla(r, h).toFixed(2)); // virgulden sonra kac basamak gormek istiyorsak >> toFixed
-
-// * ORNEK:
