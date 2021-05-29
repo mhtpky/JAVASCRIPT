@@ -16,10 +16,34 @@ Sadece diziler ve objelerde kullanilabilir-->
 
 <!-- << FOR OF DONGUSU >>
 For in'e benzer ama For of bicok veri yapisi uzerinde calisabilir ve bu sebepten daha genis kullanim alanina sahiptir
-Diziler,Stringer,Map'ler vb bir cok veri yapisinda kullanilir -->
+Diziler,Stringer,Map'ler vb bir cok veri yapisinda kullanilir 
+For in dongusunun bir cok veri yapisini kapsayacak sekilde guncellenmis halidir. 
+Bu dongude dizi icerisinde ki veriye erisirken indisleme kullanmaya gerek yoktur.-->
+
+<!-- << FOR EACH METODU ILE DIZI ITERASYONU >> 
+Array.forEach() bir dongu deyimi degil dizi iterasyon metodudur
+Bir fonksiyonu parametre olarak alir ve bu fonksiyona gore belirtilen dizi uzerinde iterasyon yapilabilir
+Orjinal diziyi degistirmez
+Avantaji : kullanimi kolay
+Dezavantaji : donguyu kirmak ve atlamak mumkun degildir-->
 
 <body>
+    <div>
+        <label for="dolar">Dolar Paritesi</label>
+        <input class="dolar" type="number" />
+    </div>
+
+    <div style="margin-top: 20px">
+        <label for="yuro">Yuro Paritesi</label>
+        <input class="yuro" type="number" />
+    </div>
+
+    <h1>Urunlerin Dolar Fiyatlari: <span class="dolar-fiyat"></span></h1>
+    <h1>Urunlerin Yuro Fiyatlari:<span class="yuro-fiyat"></span></h1>
+    <h1>Urunlerin Zamli Fiyatlari:<span class="zamli-fiyat"></span></h1>
+    <h1>Fiyatların Toplamı: <span class="toplam">0</span></h1>
     <script src="iterasyon.js"></script>
 </body>
 
 </html>
+© 2021 GitHub, Inc.
